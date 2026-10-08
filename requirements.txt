@@ -1,0 +1,9 @@
+# Python packages for the notebook and the scripts (tested versions in brackets in README.md)
+numpy>=1.24,<2.0
+scipy>=1.10
+matplotlib>=3.7
+sympy>=1.12
+pillow>=10.0
+imageio>=2.30
+imageio-ffmpeg>=0.4.9
+jupyter

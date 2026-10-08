@@ -1,0 +1,109 @@
+====================================================================================================
+1. FREQUENCIES (SI, k = 1/2/100 N/m), mirror parity (+1 symmetric = width-type, -1 antisymmetric = shift-type)
+mode  omega (rad/s)    Table 1   f (GHz)    T (ps)  parity
+   1      0.000e+00   2.99e+04      0.00       inf   -1.00
+   2      2.064e+04   3.99e+05      0.00 304414316.19   -1.00
+   3      5.581e+10   5.58e+10      8.88    112.58   +1.00
+   4      1.560e+11   1.56e+11     24.82     40.29   +1.00
+   5      4.501e+11   4.50e+11     71.64     13.96   -1.00
+   6      8.187e+11   8.19e+11    130.29      7.67   -1.00
+   7      9.242e+11   9.24e+11    147.09      6.80   +1.00
+   8      1.525e+12   1.52e+12    242.66      4.12   +1.00
+   9      1.582e+12   1.58e+12    251.75      3.97   -1.00
+  10      1.691e+12   1.69e+12    269.07      3.72   +1.00
+  11      1.245e+13   1.24e+13   1981.34      0.50   -1.00
+  12      1.246e+13   1.25e+13   1983.48      0.50   +1.00
+Modes 1-2: exact zero modes; rank of mass-weighted compatibility matrix = 10 (singular values: 1.87e+12, 1.81e+12, 1.37e+12, 1.22e+12, 1.15e+12, 8.12e+11, 7.44e+11, 4.31e+11, 1.41e+11, 5.57e+10).
+Mode 2 printed value is round-off (notebook gave 3.99e5, this run 2.1e+04): no physical frequency.
+If the model values 10/20/1000 were read as N/m instead, every omega above would be multiplied by sqrt(10) = 3.162.
+====================================================================================================
+2. EQUIPARTITION rms AMPLITUDES at 310 K (exact, from eigenvectors). Valid with or without damping.
+   rms of observable g in mode n = |g . phi_n| * sqrt(kT) / omega_n   (phi normalised phi^T M phi = 1)
+   lengths in Angstrom
+mode  dx_top  dy_top  dx_mid  dy_mid  dx_bot  dy_bot  th1(deg) th2(deg) th3(deg) th4(deg)
+   3   0.420   0.000   0.163   0.000   0.094   0.000      0.522     0.522     5.558     5.558
+   4   0.153   0.000   0.069   0.000   0.292   0.000      0.452     0.452     0.640     0.640
+   5   0.000   0.008   0.000   0.127   0.000   0.247      0.668     0.668     0.184     0.184
+   6   0.000   0.385   0.000   0.097   0.000   0.191      1.608     1.608     1.135     1.135
+   7   0.564   0.000   0.306   0.000   0.049   0.000      0.523     0.523     0.501     0.501
+   8   0.202   0.000   0.149   0.000   0.499   0.000      0.713     0.713     0.777     0.777
+   9   0.000   0.047   0.000   0.005   0.000   0.056      0.289     0.289     0.894     0.894
+  10   0.352   0.000   0.115   0.000   0.122   0.000      0.482     0.482     0.665     0.665
+  11   0.000   0.007   0.000   0.003   0.000   0.001      0.023     0.023     0.167     0.167
+  12   0.002   0.000   0.014   0.000   0.025   0.000      0.023     0.023     0.167     0.167
+all   0.826   0.388   0.401   0.160   0.601   0.317   (modes 3-12 combined; zero modes excluded - undefined in harmonic model)
+   max rod-centre rms displacement per mode (A) and upper bound sqrt(kT/(m_light w^2)) (A):
+   mode  3:  4.849   bound  6.907
+   mode  4:  1.421   bound  2.472
+   mode  5:  0.395   bound  0.856
+   mode  6:  0.075   bound  0.471
+   mode  7:  0.200   bound  0.417
+   mode  8:  0.074   bound  0.253
+   mode  9:  0.119   bound  0.244
+   mode 10:  0.093   bound  0.228
+   mode 11:  0.010   bound  0.031
+   mode 12:  0.010   bound  0.031
+====================================================================================================
+3. DAMPING
+3a. Single-sphere estimate Q = m*omega/gamma, Stokes sphere gamma = 6*pi*eta*a
+   m=4.32e-24 kg, gamma=2e-11 kg/s: m3:0.01, m4:0.03, m5:0.10, m6:0.18, m7:0.20, m8:0.33, m9:0.34, m10:0.37, m11:2.69, m12:2.69
+   a=0.5 nm, eta=0.7 mPa s, m=2.88e-24 kg: m3:0.02, m4:0.07, m5:0.20, m6:0.36, m7:0.40, m8:0.67, m9:0.69, m10:0.74, m11:5.43, m12:5.44
+3b. Slender-rod friction matrix (Tirado-Garcia de la Torre cylinders, d = 1 nm), modal Q_n = omega_n / (phi_n^T Gamma phi_n)
+    and exact damped dynamics M q'' + Gamma q' + H q = 0 (24x24 state space): 'osc' = complex pair (underdamped), 'relax' = real roots
+   eta = 0.0007 Pa s (water 0.7 mPa s):
+      modal Q: m3:0.02, m4:0.06, m5:0.13, m6:0.10, m7:0.22, m8:0.20, m9:0.24, m10:0.26, m11:1.36, m12:1.37
+      exact: 2 oscillatory pairs; damped frequencies (rad/s): 1.08e+13, 1.08e+13
+      relaxation times (ps) of overdamped roots: 1.1e+03, 1.1e+02, 17, 11, 5.5, 2.4, 2.3, 2, 0.39, 0.39, 0.36, 0.32, 0.31, 0.3, 0.15, 0.15, 0.11, 0.11
+   eta = 0.007 Pa s (10x water):
+      modal Q: m3:0.00, m4:0.01, m5:0.01, m6:0.01, m7:0.02, m8:0.02, m9:0.02, m10:0.03, m11:0.14, m12:0.14
+      exact: 0 oscillatory pairs; damped frequencies (rad/s): 
+      relaxation times (ps) of overdamped roots: 1.1e+04, 1.1e+03, 1.8e+02, 1.1e+02, 57, 26, 25, 22, 0.36, 0.36, 0.04, 0.04, 0.034, 0.034, 0.031, 0.031, 0.028, 0.028, 0.012, 0.012, 0.0079, 0.0079
+   eta = 0.07 Pa s (100x water (protein/lipid-like)):
+      modal Q: m3:0.00, m4:0.00, m5:0.00, m6:0.00, m7:0.00, m8:0.00, m9:0.00, m10:0.00, m11:0.01, m12:0.01
+      exact: 0 oscillatory pairs; damped frequencies (rad/s): 
+      relaxation times (ps) of overdamped roots: 1.1e+05, 1.1e+04, 1.8e+03, 1.1e+03, 5.7e+02, 2.6e+02, 2.5e+02, 2.2e+02, 3.9, 3.9, 0.0039, 0.0039, 0.0033, 0.0033, 0.0031, 0.0031, 0.0028, 0.0028, 0.0012, 0.0012, 0.00078, 0.00078
+   eta = 0.7 Pa s (1000x water (lipid)):
+      modal Q: m3:0.00, m4:0.00, m5:0.00, m6:0.00, m7:0.00, m8:0.00, m9:0.00, m10:0.00, m11:0.00, m12:0.00
+      exact: 0 oscillatory pairs; damped frequencies (rad/s): 
+      relaxation times (ps) of overdamped roots: 9.4e+09, 1.1e+06, 1.1e+05, 1.8e+04, 1.1e+04, 5.7e+03, 2.6e+03, 2.5e+03, 2.2e+03, 39, 39, 0.00039, 0.00039, 0.00033, 0.00033, 0.00031, 0.00031, 0.00028, 0.00028, 0.00012, 0.00012, 7.8e-05, 7.8e-05
+   viscosity at which each mode becomes critically damped (modal Q = 0.5), Pa s:
+      m3:2.3e-05, m4:8.3e-05, m5:0.00019, m6:0.00014, m7:0.00031, m8:0.00028, m9:0.00034, m10:0.00036, m11:0.0019, m12:0.0019
+====================================================================================================
+4. SENSITIVITY TO SPRING CONSTANTS
+   Exact: k -> s*k scales all omega by sqrt(s) and leaves mode shapes unchanged. Only ratios matter.
+   weak springs k1,k3-k8 (1 N/m) x0.5: zero modes=2; freq ratio m3..m12: 0.71 0.75 0.71 0.71 0.72 0.93 0.71 0.71 1.00 1.00; min overlap 0.98 (mode 8)
+   weak springs k1,k3-k8 (1 N/m) x1.5: zero modes=2; freq ratio m3..m12: 1.22 1.16 1.22 1.22 1.20 1.08 1.22 1.22 1.00 1.00; min overlap 0.99 (mode 8)
+   k2 (2 N/m) x0.5: zero modes=2; freq ratio m3..m12: 1.00 0.90 1.00 1.00 0.96 0.82 1.00 1.00 1.00 1.00; min overlap 0.97 (mode 8)
+   k2 (2 N/m) x1.5: zero modes=2; freq ratio m3..m12: 1.00 1.04 1.00 1.00 1.01 1.17 1.00 1.00 1.00 1.00; min overlap 0.94 (mode 8)
+   stiff k9,k10 (100 N/m) x0.5: zero modes=2; freq ratio m3..m12: 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 0.71 0.71; min overlap 1.00 (mode 10)
+   stiff k9,k10 (100 N/m) x1.5: zero modes=2; freq ratio m3..m12: 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.00 1.22 1.22; min overlap 1.00 (mode 10)
+   (A) SYMMETRY-PRESERVING: mirror-partner springs scaled together, each pair x U(0.5,1.5), 2000 samples
+   mode     freq ratio median [5%,95%]  % overlap>0.9  % overlap>0.8
+      3           0.96 [0.82,1.13]          100%           100%
+      4           0.98 [0.78,1.16]          100%           100%
+      5           0.96 [0.81,1.12]          100%           100%
+      6           1.00 [0.81,1.15]          100%           100%
+      7           0.98 [0.81,1.14]          100%           100%
+      8           1.00 [0.83,1.17]           87%            96%
+      9           1.01 [0.80,1.16]          100%           100%
+     10           1.01 [0.83,1.15]           87%            95%
+     11           1.00 [0.74,1.20]          100%           100%
+     12           1.00 [0.74,1.20]          100%           100%
+   subspace of modes 8-10: min principal overlap median 0.99, >0.9 in 100% of samples
+   subspace of modes 11-12: min principal overlap median 1.00, >0.9 in 100% of samples
+   zero modes in every sample: {2}
+   (B) SYMMETRY-BREAKING: each of the 10 springs independently x U(0.5,1.5), 2000 samples
+   mode     freq ratio median [5%,95%]  % overlap>0.9  % overlap>0.8
+      3           0.96 [0.85,1.08]          100%           100%
+      4           0.96 [0.82,1.13]          100%           100%
+      5           0.97 [0.86,1.07]          100%           100%
+      6           0.98 [0.85,1.11]           84%            94%
+      7           0.99 [0.83,1.12]           82%            94%
+      8           1.00 [0.83,1.16]           76%            90%
+      9           0.95 [0.82,1.10]           31%            66%
+     10           1.05 [0.90,1.14]           33%            73%
+     11           0.89 [0.73,1.12]            0%             1%
+     12           1.09 [0.86,1.21]            0%             1%
+   subspace of modes 8-10: min principal overlap median 0.99, >0.9 in 100% of samples
+   subspace of modes 11-12: min principal overlap median 1.00, >0.9 in 100% of samples
+   zero modes in every sample: {2}

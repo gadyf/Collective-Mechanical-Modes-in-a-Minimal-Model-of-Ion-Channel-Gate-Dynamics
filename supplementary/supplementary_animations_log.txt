@@ -1,0 +1,6 @@
+singular values of mass-weighted B: [2.242 2.167 1.648 1.461 1.377 0.974 0.893 0.518 0.169 0.067]
+zero mode 1: parity -1.000; |B dq| = 3.3e-16; share inner rods 1.00, outer 0.00
+zero mode 2: parity -1.000; |B dq| = 2.6e-16; share inner rods 0.01, outer 0.99
+zero mode 1 drawn at amplitude 0.7: max rod-end displacement 3.27 A; mid dy(right-left) +5.56 A; mid width change -0.000 A
+zero mode 2 drawn at amplitude 0.7: max rod-end displacement 3.63 A; mid dy(right-left) +0.04 A; mid width change -0.000 A
+files: Animation_S01_zero_mode_1.gif, Animation_S01_zero_mode_1.mp4, Animation_S02_zero_mode_2.gif, Animation_S02_zero_mode_2.mp4, Animation_S03_mode_3.gif, Animation_S03_mode_3.mp4, Animation_S04_mode_4.gif, Animation_S04_mode_4.mp4, Animation_S05_mode_5.gif, Animation_S05_mode_5.mp4, Animation_S06_mode_6.gif, Animation_S06_mode_6.mp4, Animation_S07_mode_7.gif, Animation_S07_mode_7.mp4, Animation_S08_mode_8.gif, Animation_S08_mode_8.mp4, Animation_S09_mode_9.gif, Animation_S09_mode_9.mp4, Animation_S10_mode_10.gif, Animation_S10_mode_10.mp4, Animation_S11_mode_11.gif, Animation_S11_mode_11.mp4, Animation_S12_mode_12.gif, Animation_S12_mode_12.mp4, Fig_S1_zero_modes.png, Fig_S1_zero_modes.svg, supplementary_animations_log.txt

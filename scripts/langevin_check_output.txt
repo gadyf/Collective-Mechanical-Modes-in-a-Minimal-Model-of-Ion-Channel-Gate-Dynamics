@@ -1,0 +1,14 @@
+Conditioning check: eigenvalues of H~ (ps^-2): [-3.073e-15  2.564e-16  3.115e-03  2.432e-02  2.026e-01  6.702e-01
+  8.541e-01  2.325e+00  2.502e+00  2.858e+00  1.550e+02  1.553e+02]
+=== water (eta = 0.0007 Pa s), 64 trajectories, burn-in 8 ns, sampling 20 ns, exact propagator dt = 0.05 ps
+  rms dx_top: simulation 0.829 A   Eq.(12) 0.826 A   ratio 1.004
+  rms dx_mid: simulation 0.401 A   Eq.(12) 0.401 A   ratio 1.002
+  rms dx_bot: simulation 0.600 A   Eq.(12) 0.601 A   ratio 0.998
+  mean kinetic energy per coordinate / (kT/2): min 0.999, max 1.001
+  zero-mode diffusion: variance of Dy_mid displacement since start of sampling (A^2) vs time (ns): 0 ns: 0.000426, 3 ns: 481, 7 ns: 949, 10 ns: 1.36e+03, 13 ns: 1.67e+03, 17 ns: 1.99e+03, 20 ns: 2.62e+03
+=== 10x water (eta = 0.007 Pa s), 64 trajectories, burn-in 60 ns, sampling 60 ns, exact propagator dt = 0.05 ps
+  rms dx_top: simulation 0.835 A   Eq.(12) 0.826 A   ratio 1.012
+  rms dx_mid: simulation 0.404 A   Eq.(12) 0.401 A   ratio 1.007
+  rms dx_bot: simulation 0.600 A   Eq.(12) 0.601 A   ratio 0.998
+  mean kinetic energy per coordinate / (kT/2): min 1.000, max 1.000
+  zero-mode diffusion: variance of Dy_mid displacement since start of sampling (A^2) vs time (ns): 0 ns: 0.000262, 10 ns: 120, 20 ns: 303, 30 ns: 365, 40 ns: 495, 50 ns: 627

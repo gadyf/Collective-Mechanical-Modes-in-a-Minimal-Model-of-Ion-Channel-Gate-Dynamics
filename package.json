@@ -1,0 +1,8 @@
+{
+  "name": "k2p-gate-modes-supplementary",
+  "private": true,
+  "description": "Builds supplementary/Supplementary_Material.docx (node scripts/make_supplementary_docx.js)",
+  "dependencies": {
+    "docx": "^9.8.1"
+  }
+}

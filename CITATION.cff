@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article and this archived version."
+title: "Collective mechanical modes in a minimal ion-channel gate model: code and data"
+version: "1.0"
+date-released: "2026-XX-XX"   # set on release
+doi: "10.5281/zenodo.XXXXXXX"  # set after the Zenodo release
+license: "TO-BE-CHOSEN"        # e.g. MIT
+repository-code: "https://github.com/OWNER/REPOSITORY"
+authors:
+  - family-names: Frenkel
+    given-names: Gady
+  - family-names: Mourokh
+    given-names: Lev
+  - family-names: Ben-Abu
+    given-names: Yuval
+preferred-citation:
+  type: article
+  title: "Collective Mechanical Modes in a Minimal Model of Ion Channel Gate Dynamics"
+  journal: "Computational and Structural Biotechnology Journal"
+  year: 2026
+  authors:
+    - family-names: Frenkel
+      given-names: Gady
+    - family-names: Mourokh
+      given-names: Lev
+    - family-names: Ben-Abu
+      given-names: Yuval

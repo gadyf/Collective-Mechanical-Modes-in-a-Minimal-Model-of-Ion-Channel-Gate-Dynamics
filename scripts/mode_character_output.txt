@@ -1,0 +1,57 @@
+Mode decomposition, k = 1/2/100 N/m, T = 310 K. Rods: 1 inner-left, 2 inner-right (long, channel walls), 3 outer-left, 4 outer-right.
+KE fractions: share of the mode's kinetic energy in each group (sums to 1).
+mode parity |  in_x  in_y in_th | out_x out_y out_th ||  width   sway piston  shift  th_in th_out || dx_top dx_bot dy_top dy_bot
+             (fractions)                                (thermal rms: lengths in Angstrom, angles in degrees)
+   1     -1 |  0.04  0.93  0.02 |  0.00  0.01  0.00 || zero mode: thermal amplitude undefined in the harmonic model
+   2     -1 |  0.00  0.01  0.01 |  0.00  0.96  0.01 || zero mode: thermal amplitude undefined in the harmonic model
+   3     +1 |  0.00  0.00  0.00 |  0.00  0.99  0.01 ||  0.163  0.000  0.094  0.000  0.522  5.558 ||  0.420  0.094  0.000  0.000
+   4     +1 |  0.00  0.99  0.00 |  0.00  0.00  0.00 ||  0.069  0.000  1.421  0.000  0.452  0.640 ||  0.153  0.292  0.000  0.000
+   5     -1 |  0.62  0.02  0.04 |  0.31  0.01  0.00 ||  0.000  0.390  0.000  0.127  0.668  0.184 ||  0.000  0.000  0.008  0.247
+   6     -1 |  0.04  0.03  0.80 |  0.00  0.01  0.12 ||  0.000  0.057  0.000  0.097  1.608  1.135 ||  0.000  0.000  0.385  0.191
+   7     +1 |  0.40  0.00  0.11 |  0.46  0.00  0.03 ||  0.306  0.000  0.009  0.000  0.523  0.501 ||  0.564  0.049  0.000  0.000
+   8     +1 |  0.26  0.00  0.55 |  0.00  0.00  0.19 ||  0.149  0.000  0.004  0.000  0.713  0.777 ||  0.202  0.499  0.000  0.000
+   9     -1 |  0.15  0.00  0.10 |  0.48  0.00  0.27 ||  0.000  0.055  0.000  0.005  0.289  0.894 ||  0.000  0.000  0.047  0.056
+  10     +1 |  0.19  0.00  0.31 |  0.33  0.00  0.17 ||  0.115  0.000  0.001  0.000  0.482  0.665 ||  0.352  0.122  0.000  0.000
+  11     -1 |  0.14  0.01  0.04 |  0.21  0.01  0.59 ||  0.000  0.007  0.000  0.003  0.023  0.167 ||  0.000  0.000  0.007  0.001
+  12     +1 |  0.14  0.01  0.04 |  0.21  0.01  0.59 ||  0.014  0.000  0.001  0.000  0.023  0.167 ||  0.002  0.025  0.000  0.000
+
+Sign relations (exact, from mirror symmetry):
+  parity +1: dx2 = -dx1, dy2 = dy1, dth2 = -dth1  -> width, piston, counter-tilt;  sway = shift = 0
+  parity -1: dx2 =  dx1, dy2 = -dy1, dth2 =  dth1 -> sway, shift, co-tilt;         width = piston = 0
+
+END-POINT VIEW (what the animation shows). Per rod: rms displacement of rod ends split into
+  T = centre-of-mass translation |d_cm|,  R = rotational end displacement (L/2)|dtheta|.
+  'anim' = peak amplitude in the notebook animation units (u/sqrt(W_toy)*0.2, toy length units);
+  'thermal' = rms at 310 K in Angstrom.  Inner = rods 1,2 (long, channel walls); outer = rods 3,4 (short).
+mode | anim: inner T  inner R  outer T  outer R | thermal: inner T  inner R  outer T  outer R | inner T dir (deg from x)
+   1 |         0.080    0.020    0.011    0.000 |        zero mode                            |   101
+   2 |         0.011    0.012    0.098    0.021 |        zero mode                            |    59
+   3 |         0.003    0.003    0.099    0.020 |            0.124    0.137    4.849    0.970 |   131
+   4 |         0.081    0.007    0.007    0.006 |            1.421    0.118    0.121    0.112 |    91
+   5 |         0.065    0.029    0.056    0.005 |            0.395    0.175    0.342    0.032 |     9
+   6 |         0.023    0.126    0.008    0.060 |            0.075    0.421    0.028    0.198 |    40
+   7 |         0.052    0.046    0.068    0.030 |            0.153    0.137    0.200    0.087 |   177
+   8 |         0.042    0.104    0.006    0.076 |            0.074    0.187    0.010    0.136 |     3
+   9 |         0.032    0.044    0.069    0.091 |            0.055    0.076    0.119    0.156 |     2
+  10 |         0.036    0.078    0.057    0.072 |            0.058    0.126    0.093    0.116 |     1
+  11 |         0.031    0.027    0.047    0.133 |            0.007    0.006    0.010    0.029 |    12
+  12 |         0.032    0.028    0.047    0.133 |            0.007    0.006    0.010    0.029 |    12
+(inner rods are at 70/110 deg to x: a direction of ~70 or ~110 deg = motion along the rod axis; ~0/180 = horizontal)
+
+AXIAL / PERPENDICULAR / PIVOT VIEW (rods 1 and 3; rods 2 and 4 follow by mirror symmetry).
+  a = CM displacement along the rod axis (sliding), p = CM displacement perpendicular to the axis, r = (L/2)*dtheta (end displacement from rotation),
+  pivot s* = point on the rod axis with zero perpendicular displacement, in units of L/2 measured from the centre (+ = upper end).
+  |s*| < 1: rod visibly tilts about a point on itself;  |s*| >> 1: mostly sideways translation.  Values in animation units (toy length).
+mode |  inner a       p       r   pivot |  outer a       p       r   pivot
+   1 |   +0.069  +0.042  -0.020   +2.11 |   -0.011  +0.001  +0.000   -5.62
+   2 |   +0.011  -0.002  -0.012   -0.18 |   +0.097  +0.012  -0.021   +0.59
+   3 |   -0.001  -0.002  -0.003   -0.79 |   +0.098  +0.017  -0.020   +0.85
+   4 |   +0.076  +0.030  -0.007   +4.39 |   +0.004  -0.006  +0.006   +0.91
+   5 |   -0.032  +0.057  +0.029   -1.97 |   +0.001  +0.056  -0.005  +10.67
+   6 |   +0.020  -0.011  +0.126   +0.09 |   +0.008  +0.003  +0.060   -0.05
+   7 |   +0.015  -0.050  -0.046   -1.07 |   +0.007  -0.067  -0.030   -2.27
+   8 |   -0.017  +0.038  -0.104   +0.37 |   -0.005  -0.001  -0.076   -0.02
+   9 |   +0.012  -0.029  -0.044   -0.67 |   -0.008  +0.069  +0.091   -0.76
+  10 |   +0.013  -0.033  -0.078   -0.43 |   -0.007  +0.057  +0.072   -0.79
+  11 |   -0.017  +0.027  -0.027   +0.98 |   +0.017  -0.044  +0.133   +0.33
+  12 |   -0.017  +0.027  -0.028   +0.98 |   +0.017  -0.044  +0.133   +0.33

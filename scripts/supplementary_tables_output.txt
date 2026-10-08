@@ -1,0 +1,135 @@
+==========================================================================================
+TABLE S1  geometry and parameters (SI)
+rod 1: centre (-1.00, +0.00) nm, theta 70.0 deg, L 3 nm, m 4.320e-24 kg = 2.60 kDa, I 3.240e-42 kg m^2
+rod 2: centre (+1.00, +0.00) nm, theta 110.0 deg, L 3 nm, m 4.320e-24 kg = 2.60 kDa, I 3.240e-42 kg m^2
+rod 3: centre (-1.10, +0.50) nm, theta 81.0 deg, L 2 nm, m 2.880e-24 kg = 1.73 kDa, I 9.600e-43 kg m^2
+rod 4: centre (+1.10, +0.50) nm, theta 99.0 deg, L 2 nm, m 2.880e-24 kg = 1.73 kDa, I 9.600e-43 kg m^2
+anchoring point A1 (left): (-3.0, +2.0) nm
+anchoring point A2 (left): (-3.0, -2.0) nm
+anchoring point A1 (right): (+3.0, +2.0) nm
+anchoring point A2 (right): (+3.0, -2.0) nm
+spring  1 (code 0): rod 1 s=1 at (-0.658,+0.940) -- rod 2 s=1 at (+0.658,+0.940); natural length 1.316 nm; k 1 N/m
+spring  2 (code 1): rod 1 s=-1 at (-1.342,-0.940) -- rod 2 s=-1 at (+1.342,-0.940); natural length 2.684 nm; k 2 N/m
+spring  3 (code 7): rod 3 s=1 at (-0.944,+1.488) -- anchoring point A1 (left) s=None at (-3.000,+2.000); natural length 2.119 nm; k 1 N/m
+spring  4 (code 9): rod 4 s=1 at (+0.944,+1.488) -- anchoring point A1 (right) s=None at (+3.000,+2.000); natural length 2.119 nm; k 1 N/m
+spring  5 (code 6): rod 1 s=-1.5 at (-1.513,-1.410) -- anchoring point A2 (left) s=None at (-3.000,-2.000); natural length 1.600 nm; k 1 N/m
+spring  6 (code 8): rod 2 s=-1.5 at (+1.513,-1.410) -- anchoring point A2 (right) s=None at (+3.000,-2.000); natural length 1.600 nm; k 1 N/m
+spring  7 (code 4): rod 1 s=1.4 at (-0.521,+1.316) -- rod 3 s=0.85 at (-0.967,+1.340); natural length 0.447 nm; k 1 N/m
+spring  8 (code 5): rod 2 s=1.4 at (+0.521,+1.316) -- rod 4 s=0.85 at (+0.967,+1.340); natural length 0.447 nm; k 1 N/m
+spring  9 (code 2): rod 1 s=-0.5 at (-1.171,-0.470) -- rod 3 s=-1.0 at (-1.256,-0.488); natural length 0.087 nm; k 100 N/m
+spring 10 (code 3): rod 2 s=-0.5 at (+1.171,-0.470) -- rod 4 s=-1.0 at (+1.256,-0.488); natural length 0.087 nm; k 100 N/m
+natural lengths = equilibrium lengths -> network unstressed (zero force at equilibrium by construction)
+==========================================================================================
+TABLE S2  thermal rms amplitudes at 310 K (A; angles in deg)
+mode  dx_top  dy_top  dx_mid  dy_mid  dx_bot  dy_bot    sway  piston   th_in  th_out
+   3   0.420   0.000   0.163   0.000   0.094   0.000   0.000   0.094   0.522   5.558
+   4   0.153   0.000   0.069   0.000   0.292   0.000   0.000   1.421   0.452   0.640
+   5   0.000   0.008   0.000   0.127   0.000   0.247   0.390   0.000   0.668   0.184
+   6   0.000   0.385   0.000   0.097   0.000   0.191   0.057   0.000   1.608   1.135
+   7   0.564   0.000   0.306   0.000   0.049   0.000   0.000   0.009   0.523   0.501
+   8   0.202   0.000   0.149   0.000   0.499   0.000   0.000   0.004   0.713   0.777
+   9   0.000   0.047   0.000   0.005   0.000   0.056   0.055   0.000   0.289   0.894
+  10   0.352   0.000   0.115   0.000   0.122   0.000   0.000   0.001   0.482   0.665
+  11   0.000   0.007   0.000   0.003   0.000   0.001   0.007   0.000   0.023   0.167
+  12   0.002   0.000   0.014   0.000   0.025   0.000   0.000   0.001   0.023   0.167
+ all   0.826   0.388   0.401   0.160   0.601   0.317   0.398   1.424   2.146   5.897
+==========================================================================================
+TABLE S3  damping
+eta 0.7 mPa s: modal Q m3:0.017, m4:0.059, m5:0.134, m6:0.098, m7:0.223, m8:0.197, m9:0.244, m10:0.260, m11:1.364, m12:1.368
+   exact: 2 oscillatory pairs [10817000000000.0, 10834000000000.0]; eight slowest relaxation roots:
+      tau      1084 ps; mode weights m1..m12: 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+      tau     107.9 ps; mode weights m1..m12: 0.00 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+      tau     17.45 ps; mode weights m1..m12: 0.00 0.00 0.00 0.00 0.94 0.06 0.00 0.00 0.00 0.00 0.00 0.00
+      tau     10.63 ps; mode weights m1..m12: 0.05 0.03 0.00 0.00 0.37 0.55 0.00 0.00 0.00 0.00 0.00 0.00
+      tau     5.509 ps; mode weights m1..m12: 0.00 0.00 0.01 0.00 0.00 0.00 0.86 0.12 0.00 0.00 0.00 0.00
+      tau     2.391 ps; mode weights m1..m12: 0.01 0.02 0.00 0.00 0.01 0.00 0.00 0.00 0.96 0.00 0.00 0.00
+      tau     2.261 ps; mode weights m1..m12: 0.00 0.00 0.00 0.01 0.00 0.00 0.42 0.31 0.00 0.26 0.00 0.00
+      tau     1.979 ps; mode weights m1..m12: 0.00 0.00 0.02 0.00 0.00 0.00 0.30 0.28 0.00 0.40 0.00 0.00
+   mode  3: modal (single-mode root) 1084 ps, 1/(Q w) 1084 ps; exact root with largest weight 1084 ps (weight 1.00)
+   mode  4: modal (single-mode root) 107.9 ps, 1/(Q w) 108.2 ps; exact root with largest weight 107.9 ps (weight 1.00)
+   mode  5: modal (single-mode root) 16.32 ps, 1/(Q w) 16.62 ps; exact root with largest weight 17.45 ps (weight 0.94)
+   mode  6: modal (single-mode root) 12.35 ps, 1/(Q w) 12.47 ps; exact root with largest weight 10.63 ps (weight 0.55)
+   mode  7: modal (single-mode root) 4.586 ps, 1/(Q w) 4.841 ps; exact root with largest weight 5.509 ps (weight 0.86)
+   mode  8: modal (single-mode root) 3.2 ps, 1/(Q w) 3.334 ps; exact root with largest weight 2.261 ps (weight 0.31)
+   mode  9: modal (single-mode root) 2.424 ps, 1/(Q w) 2.589 ps; exact root with largest weight 2.391 ps (weight 0.96)
+   mode 10: modal (single-mode root) 2.113 ps, 1/(Q w) 2.279 ps; exact root with largest weight 1.979 ps (weight 0.40)
+eta 7 mPa s: modal Q m3:0.002, m4:0.006, m5:0.013, m6:0.010, m7:0.022, m8:0.020, m9:0.024, m10:0.026, m11:0.136, m12:0.137
+   exact: 0 oscillatory pairs []; eight slowest relaxation roots:
+      tau 1.084e+04 ps; mode weights m1..m12: 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+      tau      1082 ps; mode weights m1..m12: 0.00 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+      tau       177 ps; mode weights m1..m12: 0.00 0.00 0.00 0.00 0.94 0.05 0.00 0.00 0.00 0.00 0.00 0.00
+      tau     108.4 ps; mode weights m1..m12: 0.05 0.03 0.00 0.00 0.35 0.57 0.00 0.00 0.00 0.00 0.00 0.00
+      tau     56.85 ps; mode weights m1..m12: 0.00 0.00 0.01 0.00 0.00 0.00 0.87 0.12 0.00 0.00 0.00 0.00
+      tau     25.61 ps; mode weights m1..m12: 0.00 0.02 0.00 0.00 0.01 0.00 0.00 0.00 0.97 0.00 0.00 0.00
+      tau     25.09 ps; mode weights m1..m12: 0.00 0.00 0.00 0.00 0.00 0.00 0.44 0.42 0.00 0.13 0.00 0.00
+      tau        22 ps; mode weights m1..m12: 0.00 0.00 0.02 0.00 0.00 0.00 0.14 0.18 0.00 0.66 0.00 0.00
+   mode  3: modal (single-mode root) 1.084e+04 ps, 1/(Q w) 1.084e+04 ps; exact root with largest weight 1.084e+04 ps (weight 1.00)
+   mode  4: modal (single-mode root) 1082 ps, 1/(Q w) 1082 ps; exact root with largest weight 1082 ps (weight 1.00)
+   mode  5: modal (single-mode root) 166.2 ps, 1/(Q w) 166.2 ps; exact root with largest weight 177 ps (weight 0.94)
+   mode  6: modal (single-mode root) 124.7 ps, 1/(Q w) 124.7 ps; exact root with largest weight 108.4 ps (weight 0.57)
+   mode  7: modal (single-mode root) 48.39 ps, 1/(Q w) 48.41 ps; exact root with largest weight 56.85 ps (weight 0.87)
+   mode  8: modal (single-mode root) 33.33 ps, 1/(Q w) 33.34 ps; exact root with largest weight 25.09 ps (weight 0.42)
+   mode  9: modal (single-mode root) 25.88 ps, 1/(Q w) 25.89 ps; exact root with largest weight 25.61 ps (weight 0.97)
+   mode 10: modal (single-mode root) 22.77 ps, 1/(Q w) 22.79 ps; exact root with largest weight 22 ps (weight 0.66)
+eta 70 mPa s: modal Q m3:0.000, m4:0.001, m5:0.001, m6:0.001, m7:0.002, m8:0.002, m9:0.002, m10:0.003, m11:0.014, m12:0.014
+   exact: 0 oscillatory pairs []; eight slowest relaxation roots:
+      tau 1.084e+05 ps; mode weights m1..m12: 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+      tau 1.082e+04 ps; mode weights m1..m12: 0.00 0.00 0.00 1.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+      tau      1770 ps; mode weights m1..m12: 0.00 0.00 0.00 0.00 0.94 0.05 0.00 0.00 0.00 0.00 0.00 0.00
+      tau      1084 ps; mode weights m1..m12: 0.05 0.03 0.00 0.00 0.35 0.57 0.00 0.00 0.00 0.00 0.00 0.00
+      tau     568.7 ps; mode weights m1..m12: 0.00 0.00 0.01 0.00 0.00 0.00 0.87 0.12 0.00 0.00 0.00 0.00
+      tau     256.3 ps; mode weights m1..m12: 0.00 0.02 0.00 0.00 0.01 0.00 0.00 0.00 0.97 0.00 0.00 0.00
+      tau     251.2 ps; mode weights m1..m12: 0.00 0.00 0.00 0.00 0.00 0.00 0.44 0.42 0.00 0.13 0.00 0.00
+      tau     220.2 ps; mode weights m1..m12: 0.00 0.00 0.02 0.00 0.00 0.00 0.14 0.18 0.00 0.67 0.00 0.00
+   mode  3: modal (single-mode root) 1.084e+05 ps, 1/(Q w) 1.084e+05 ps; exact root with largest weight 1.084e+05 ps (weight 1.00)
+   mode  4: modal (single-mode root) 1.082e+04 ps, 1/(Q w) 1.082e+04 ps; exact root with largest weight 1.082e+04 ps (weight 1.00)
+   mode  5: modal (single-mode root) 1662 ps, 1/(Q w) 1662 ps; exact root with largest weight 1770 ps (weight 0.94)
+   mode  6: modal (single-mode root) 1247 ps, 1/(Q w) 1247 ps; exact root with largest weight 1084 ps (weight 0.57)
+   mode  7: modal (single-mode root) 484.1 ps, 1/(Q w) 484.1 ps; exact root with largest weight 568.7 ps (weight 0.87)
+   mode  8: modal (single-mode root) 333.4 ps, 1/(Q w) 333.4 ps; exact root with largest weight 251.2 ps (weight 0.42)
+   mode  9: modal (single-mode root) 258.9 ps, 1/(Q w) 258.9 ps; exact root with largest weight 256.3 ps (weight 0.97)
+   mode 10: modal (single-mode root) 227.9 ps, 1/(Q w) 227.9 ps; exact root with largest weight 220.2 ps (weight 0.67)
+mode  3: omega 5.581e+10; Q sphere 0.01; Q water/10x/100x 0.017/0.0017/0.00017; eta_crit 0.023 mPa s; tau modal 1084.0698047125718; tau exact 1084.1451015126217 (weight 0.9999985597063742)
+mode  4: omega 1.560e+11; Q sphere 0.03; Q water/10x/100x 0.059/0.0059/0.00059; eta_crit 0.083 mPa s; tau modal 107.86140254221344; tau exact 107.85997675899681 (weight 0.9999167388410398)
+mode  5: omega 4.501e+11; Q sphere 0.10; Q water/10x/100x 0.134/0.0134/0.00134; eta_crit 0.19 mPa s; tau modal 16.32135076861997; tau exact 17.450496897529476 (weight 0.9382156039078163)
+mode  6: omega 8.187e+11; Q sphere 0.18; Q water/10x/100x 0.098/0.0098/0.00098; eta_crit 0.14 mPa s; tau modal 12.353309369170914; tau exact 10.628863980631035 (weight 0.553030590011749)
+mode  7: omega 9.242e+11; Q sphere 0.20; Q water/10x/100x 0.223/0.0223/0.00223; eta_crit 0.31 mPa s; tau modal 4.586103205463481; tau exact 5.508754470252678 (weight 0.8636422548509393)
+mode  8: omega 1.525e+12; Q sphere 0.33; Q water/10x/100x 0.197/0.0197/0.00197; eta_crit 0.28 mPa s; tau modal 3.1999201837930706; tau exact 2.261052185187203 (weight 0.3124886043670351)
+mode  9: omega 1.582e+12; Q sphere 0.34; Q water/10x/100x 0.244/0.0244/0.00244; eta_crit 0.34 mPa s; tau modal 2.4242749944727264; tau exact 2.390830814205395 (weight 0.9575284723415327)
+mode 10: omega 1.691e+12; Q sphere 0.37; Q water/10x/100x 0.260/0.0260/0.00260; eta_crit 0.36 mPa s; tau modal 2.1130166044869605; tau exact 1.9794259205563693 (weight 0.39835532848314587)
+mode 11: omega 1.245e+13; Q sphere 2.69; Q water/10x/100x 1.364/0.1364/0.01364; eta_crit 1.9 mPa s; tau modal None; tau exact None (weight None)
+mode 12: omega 1.246e+13; Q sphere 2.69; Q water/10x/100x 1.368/0.1368/0.01368; eta_crit 1.9 mPa s; tau modal None; tau exact None (weight None)
+==========================================================================================
+TABLE S4  sensitivity to spring constants
+Springs 1, 3-8 (1 N/m) x0.5: zero modes 2; ratios m3..m12 0.7072 0.7495 0.7072 0.7071 0.7215 0.9270 0.7075 0.7059 0.9992 0.9992; min overlap 0.97665 (mode 8); max |change| modes 3-10 29.413%
+Springs 1, 3-8 (1 N/m) x1.5: zero modes 2; ratios m3..m12 1.2246 1.1620 1.2245 1.2247 1.1971 1.0788 1.2240 1.2233 1.0008 1.0008; min overlap 0.99113 (mode 8); max |change| modes 3-10 22.471%
+Spring 2 (2 N/m) x0.5: zero modes 2; ratios m3..m12 0.9998 0.9044 1.0000 1.0000 0.9553 0.8198 1.0000 0.9991 1.0000 0.9995; min overlap 0.97185 (mode 8); max |change| modes 3-10 18.024%
+Spring 2 (2 N/m) x1.5: zero modes 2; ratios m3..m12 1.0001 1.0389 1.0000 1.0000 1.0135 1.1670 1.0000 0.9962 1.0000 1.0005; min overlap 0.94413 (mode 8); max |change| modes 3-10 16.697%
+Springs 9, 10 (100 N/m) x0.5: zero modes 2; ratios m3..m12 1.0000 1.0000 0.9996 0.9999 0.9988 0.9994 0.9988 0.9990 0.7083 0.7091; min overlap 0.99995 (mode 10); max |change| modes 3-10 0.122%
+Springs 9, 10 (100 N/m) x1.5: zero modes 2; ratios m3..m12 1.0000 1.0000 1.0001 1.0000 1.0004 1.0002 1.0004 1.0003 1.2241 1.2236; min overlap 0.99999 (mode 10); max |change| modes 3-10 0.040%
+Springs 9, 10 (100 N/m) x10: zero modes 2; ratios m3..m12 1.0000 1.0000 1.0003 1.0000 1.0010 1.0005 1.0011 1.0009 3.1577 3.1546; min overlap 0.99996 (mode 10); max |change| modes 3-10 0.107%
+Springs 9, 10 (100 N/m) x100: zero modes 2; ratios m3..m12 1.0000 1.0000 1.0004 1.0001 1.0011 1.0005 1.0012 1.0010 9.9839 9.9733; min overlap 0.99996 (mode 10); max |change| modes 3-10 0.118%
+(A) symmetry-preserving, 2000 samples
+   mode  3: ratio 0.96 [0.82, 1.13]; overlap>0.9 100%; >0.8 100%
+   mode  4: ratio 0.98 [0.78, 1.16]; overlap>0.9 100%; >0.8 100%
+   mode  5: ratio 0.96 [0.81, 1.12]; overlap>0.9 100%; >0.8 100%
+   mode  6: ratio 1.00 [0.81, 1.15]; overlap>0.9 100%; >0.8 100%
+   mode  7: ratio 0.98 [0.81, 1.14]; overlap>0.9 100%; >0.8 100%
+   mode  8: ratio 1.00 [0.83, 1.17]; overlap>0.9 87%; >0.8 96%
+   mode  9: ratio 1.01 [0.80, 1.16]; overlap>0.9 100%; >0.8 100%
+   mode 10: ratio 1.01 [0.83, 1.15]; overlap>0.9 87%; >0.8 95%
+   mode 11: ratio 1.00 [0.74, 1.20]; overlap>0.9 100%; >0.8 100%
+   mode 12: ratio 1.00 [0.74, 1.20]; overlap>0.9 100%; >0.8 100%
+   subspaces preserved (>0.9): {'8-10': 99.6, '11-12': 100.0}; zero modes in every sample: [2]
+(B) each spring independently, 2000 samples
+   mode  3: ratio 0.96 [0.85, 1.08]; overlap>0.9 100%; >0.8 100%
+   mode  4: ratio 0.96 [0.82, 1.13]; overlap>0.9 100%; >0.8 100%
+   mode  5: ratio 0.97 [0.86, 1.07]; overlap>0.9 100%; >0.8 100%
+   mode  6: ratio 0.98 [0.85, 1.11]; overlap>0.9 84%; >0.8 94%
+   mode  7: ratio 0.99 [0.83, 1.12]; overlap>0.9 82%; >0.8 94%
+   mode  8: ratio 1.00 [0.83, 1.16]; overlap>0.9 76%; >0.8 90%
+   mode  9: ratio 0.95 [0.82, 1.10]; overlap>0.9 31%; >0.8 66%
+   mode 10: ratio 1.05 [0.90, 1.14]; overlap>0.9 33%; >0.8 73%
+   mode 11: ratio 0.89 [0.73, 1.12]; overlap>0.9 0%; >0.8 1%
+   mode 12: ratio 1.09 [0.86, 1.21]; overlap>0.9 0%; >0.8 1%
+   subspaces preserved (>0.9): {'8-10': 99.9, '11-12': 100.0}; zero modes in every sample: [2]
