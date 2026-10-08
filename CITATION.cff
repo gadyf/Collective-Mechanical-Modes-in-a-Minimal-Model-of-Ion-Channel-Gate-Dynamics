@@ -4,8 +4,10 @@ title: "Collective mechanical modes in a minimal ion-channel gate model: code an
 version: "1.0"
 date-released: "2026-XX-XX"   # set on release
 doi: "10.5281/zenodo.XXXXXXX"  # set after the Zenodo release
-license: "TO-BE-CHOSEN"        # e.g. MIT
-repository-code: "https://github.com/OWNER/REPOSITORY"
+license:
+  - MIT          # code
+  - CC-BY-4.0    # figures, animations, supplementary data
+repository-code: "https://github.com/gadyf/Collective-Mechanical-Modes-in-a-Minimal-Model-of-Ion-Channel-Gate-Dynamics"
 authors:
   - family-names: Frenkel
     given-names: Gady

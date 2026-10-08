@@ -101,4 +101,5 @@ If you use this code, please cite the paper above and the archived version of th
 
 ## License
 
-[to be chosen by the authors; see the notes below]
+- **Code** (`notebook/`, `scripts/` and the configuration files): MIT License, see [`LICENSE`](LICENSE).
+- **Figures, animations, supplementary documents and data** (`supplementary/`): Creative Commons Attribution 4.0 International (CC BY 4.0), see [`supplementary/LICENSE.md`](supplementary/LICENSE.md).
