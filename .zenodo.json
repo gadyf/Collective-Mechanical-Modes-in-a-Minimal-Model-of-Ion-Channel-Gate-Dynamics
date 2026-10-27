@@ -1,0 +1,14 @@
+{
+  "upload_type": "software",
+  "title": "Collective mechanical modes in a minimal ion-channel gate model: code and data",
+  "description": "<p>Code and data for the paper <em>Collective Mechanical Modes in a Minimal Model of Ion Channel Gate Dynamics</em> (G. Frenkel, L. Mourokh, Y. Ben-Abu; Computational and Structural Biotechnology Journal, 2026). The repository contains the Jupyter notebook of the two-dimensional rod-and-spring model of a K2P channel gate (equations of motion, normal modes, eigenvalues and eigenvectors), the Python scripts for the zero-mode analysis, thermal amplitudes, damping estimates, sensitivity analysis and Langevin check, and the supplementary figures, animations and tables.</p><p>Code: MIT license. Figures, animations and supplementary data: CC BY 4.0 (see supplementary/LICENSE.md).</p>",
+  "creators": [
+    {"name": "Frenkel, Gady"},
+    {"name": "Mourokh, Lev"},
+    {"name": "Ben-Abu, Yuval"}
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0",
+  "keywords": ["K2P potassium channel", "ion channel gating", "normal modes", "elastic network model", "collective motions"]
+}
