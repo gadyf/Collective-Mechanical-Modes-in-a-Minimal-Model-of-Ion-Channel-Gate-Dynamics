@@ -2,8 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the article and this archived version."
 title: "Collective mechanical modes in a minimal ion-channel gate model: code and data"
 version: "1.0"
-date-released: "2026-XX-XX"   # set on release
-doi: "10.5281/zenodo.XXXXXXX"  # set after the Zenodo release
+date-released: "2026-10-27"
 license:
   - MIT          # code
   - CC-BY-4.0    # figures, animations, supplementary data
