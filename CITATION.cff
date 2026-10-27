@@ -3,6 +3,7 @@ message: "If you use this software, please cite the article and this archived ve
 title: "Collective mechanical modes in a minimal ion-channel gate model: code and data"
 version: "1.0"
 date-released: "2026-10-27"
+doi: "10.5281/zenodo.23687315"
 abstract: "Code and data for the paper Collective Mechanical Modes in a Minimal Model of Ion Channel Gate Dynamics: the notebook of the rod-and-spring model of a K2P channel gate, analysis scripts, and supplementary figures, animations and tables."
 license:
   - MIT          # code

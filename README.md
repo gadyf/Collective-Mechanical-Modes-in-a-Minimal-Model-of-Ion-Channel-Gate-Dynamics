@@ -4,7 +4,9 @@ Code and data for the paper
 
 > G. Frenkel, L. Mourokh, Y. Ben-Abu, **"Collective Mechanical Modes in a Minimal Model of Ion Channel Gate Dynamics"**, *Computational and Structural Biotechnology Journal* (under review, 2026). DOI: [to be added]
 
-Archived version of this repository: [Zenodo DOI to be added]
+[![DOI](https://zenodo.org/badge/1410137569.svg)](https://doi.org/10.5281/zenodo.23687314)
+
+Archived version of this repository: v1.0, [doi:10.5281/zenodo.23687315](https://doi.org/10.5281/zenodo.23687315) (all versions: [doi:10.5281/zenodo.23687314](https://doi.org/10.5281/zenodo.23687314)).
 
 ## The model in brief
 
